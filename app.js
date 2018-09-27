@@ -1,10 +1,11 @@
 const http = require('http');
+var dt = require('./utilities');
 const port=process.env.PORT || 3000
 const server = http.createServer((req, res) => {
 res.statusCode = 200;
 res.setHeader('Content-Type', 'text/html');
 res.write('This page is a sandbox to try out new ideas.'+'</br>');
-res.write('The date and time will go here'+'</br>');
+res.write('The date and time of the last refresh are: '+ dt.myDateTime() +'</br>');
 res.write('</br>');
  
 res.write('Find the code for this page on ' + '<a href="https://github.com/timho13/MyCoolNodeApp/">Github</a>'+'</br>');
