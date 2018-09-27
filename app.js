@@ -12,8 +12,8 @@ res.write('</br>');
 res.write('Acknowledgments:'+'</br>');
 
 res.write('Thanks to Rohit Ramname for the initial instruction to get something showing on a publicly available page outside my home network. Available ' + '<a href="https://medium.freecodecamp.org/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe">here</a>');
-  https://github.com/timho13/MyCoolNodeApp/
-res.end('<h1>Hello Worldy</h1>');
+res.write('</br>');
+res.end('<h1>Hello World</h1>');
 });
 server.listen(port,() => {
 console.log(`Server running at port `+port);
