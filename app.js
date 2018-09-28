@@ -7,6 +7,10 @@ const server = http.createServer(function (req, res) {
     res.write(data);
     res.end();
   });
+  fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+});
 });
 server.listen(port,() => {
 console.log(`Server running at port `+port);
