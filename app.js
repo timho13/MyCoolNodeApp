@@ -1,9 +1,9 @@
 const http = require('http');
 var fs = require('fs');
-var header="fiddle-de-dee";
+var header="<html>";
 var data=header;
 const port=process.env.PORT || 3000
-const server = http.createServer(function (req, res) {
+var server = http.createServer(function (req, res) {
   fs.readFile('demofile2.html', function(err, data2) {
     data=data+data2
     res.writeHead(200, {'Content-Type': 'text/html'});
