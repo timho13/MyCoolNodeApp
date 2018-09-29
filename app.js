@@ -1,6 +1,6 @@
 const http = require('http');
 var fs = require('fs');
-var header="<html>";
+var header="";
 var data=header;
 const port=process.env.PORT || 3000
 const server = http.createServer(function (req, res) {
